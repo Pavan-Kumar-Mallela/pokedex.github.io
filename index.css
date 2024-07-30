@@ -1,4 +1,6 @@
-/* This is an example CSS file, feel free to remove/edit it anytime */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 .footer {
   position: absolute;
   bottom: 0;
@@ -16,4 +18,120 @@
 
 .footer span {
   font-size: 14px;
+}
+
+
+body {
+  font-family: 'Press Start 2P', cursive;
+}
+
+.bg-green-500 {
+  background-color: #34C759;
+}
+
+.bg-red-400 {
+  background-color: #FFC080;
+}
+
+.bg-blue-500 {
+  background-color: #45A0E6;
+}
+
+.bg-gray-400 {
+  background-color: #E5E5EA;
+}
+
+.text-white {
+  color: #FFFFFF;
+}
+
+.text-blue-700 {
+  color: #2196F3;
+}
+
+.rounded-lg {
+  border-radius: 0.5rem;
+}
+
+.p-4 {
+  padding: 1rem;
+}
+
+.m-8 {
+  margin: 2rem;
+}
+
+.mb-8 {
+  margin-bottom: 2rem;
+}
+
+.mt-2 {
+  margin-top: 0.5rem;
+}
+
+.mx-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.gap-2 {
+  gap: 0.5rem;
+}
+
+.flex {
+  display: flex;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.font-bold {
+  font-weight: bold;
+}
+
+.text-xl {
+  font-size: 1.5rem;
+}
+
+.text-xs {
+  font-size: 0.75rem;
+}
+
+.px-2 {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
+.py-1 {
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+}
+
+.rounded-full {
+  border-radius: 9999px;
+}
+
+.bg-green-700 {
+  background-color: #2E865F;
+}
+
+.bg-red-600 {
+  background-color: #FF9900;
+}
+
+.bg-blue-700 {
+  background-color: #2196F3;
+}
+
+.bg-purple-600 {
+  background-color: #7A288A;
+}
+
+.bg-gray-600 {
+  background-color: #9B9B9B;
 }

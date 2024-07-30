@@ -1,21 +1,181 @@
-<!DOCTYPE html>
 <html>
   <head>
     <bds />
-    <link rel="stylesheet" href="index.css" />
-    <script src="index.js" defer></script>
-    <title>BigDevSoon - Pokedex Project</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"></link>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap">
   </head>
   <body>
-    <!-- Place below is for your own exciting code -->
-    <p>Time to write some code! 👀</p>
-    <!-- Change the [ME] part to your own name/GitHub link -->
-    <div class="footer">
-      <a href="https://bigdevsoon.me" target="_blank" rel="noopener noreferrer"
-        >Project by BigDevSoon</a
-      >
-      |
-      <span>Built with ❤️ by [ME]</span>
+    <!-- Main container -->
+    <div class="min-h-screen bg-gray-100 p-8">
+      <!-- Header section -->
+      <header class="flex items-center justify-between mb-8">
+        <h1 class="text-4xl font-bold text-blue-700" style="font-family: 'Press Start 2P', cursive;">Pokédex</h1>
+        <div class="flex items-center">
+          <input 
+            type="text" 
+            placeholder="Pokemon name, number or type" 
+            class="p-2 w-96 border rounded-l-md focus:outline-none"
+          />
+          <button class="bg-yellow-400 text-white px-4 py-2 rounded-r-md">Search</button>
+        </div>
+      </header>
+
+      <!-- Sorting and filter section -->
+      <div class="flex items-center justify-between mb-8">
+        <select class="p-2 border rounded-md">
+          <option>Lowest Number First</option>
+          <option>Highest Number First</option>
+          <option>A-Z</option>
+          <option>Z-A</option>
+        </select>
+        <button class="p-2 border rounded-md flex items-center">
+          <i class="fas fa-filter mr-2"></i> Filters
+        </button>
+      </div>
+
+      <!-- Pokemon cards container -->
+      <div class="grid grid-cols-4 gap-4">
+        <!-- Pokemon card -->
+        <div class="bg-green-500 rounded-lg p-4 text-white">
+          <img src="https://placehold.co/100x100" alt="Bulbasaur" class="mx-auto mb-4">
+          <h2 class="text-xl font-bold">Bulbasaur</h2>
+          <p>#001</p>
+          <div class="flex gap-2 mt-2">
+            <span class="bg-green-700 rounded-full px-2 py-1 text-xs">Grass</span>
+            <span class="bg-purple-600 rounded-full px-2 py-1 text-xs">Poison</span>
+          </div>
+        </div>
+        <!-- Repeat the above block for each Pokemon card with appropriate data -->
+        <div class="bg-green-500 rounded-lg p-4 text-white">
+          <img src="https://placehold.co/100x100" alt="Ivysaur" class="mx-auto mb-4">
+          <h2 class="text-xl font-bold">Ivysaur</h2>
+          <p>#002</p>
+          <div class="flex gap-2 mt-2">
+            <span class="bg-green-700 rounded-full px-2 py-1 text-xs">Grass</span>
+            <span class="bg-purple-600 rounded-full px-2 py-1 text-xs">Poison</span>
+          </div>
+        </div>
+        <div class="bg-green-500 rounded-lg p-4 text-white">
+          <img src="https://placehold.co/100x100" alt="Venusaur" class="mx-auto mb-4">
+          <h2 class="text-xl font-bold">Venusaur</h2>
+          <p>#003</p>
+          <div class="flex gap-2 mt-2">
+            <span class="bg-green-700 rounded-full px-2 py-1 text-xs">Grass</span>
+            <span class="bg-purple-600 rounded-full px-2 py-1 text-xs">Poison</span>
+          </div>
+        </div>
+        <div class="bg-red-400 rounded-lg p-4 text-white">
+          <img src="https://placehold.co/100x100" alt="Charmander" class="mx-auto mb-4">
+          <h2 class="text-xl font-bold">Charmander</h2>
+          <p>#004</p>
+          <div class="flex gap-2 mt-2">
+            <span class="bg-red-600 rounded-full px-2 py-1 text-xs">Fire</span>
+          </div>
+        </div>
+        <div class="bg-red-400 rounded-lg p-4 text-white">
+          <img src="https://placehold.co/100x100" alt="Charmeleon" class="mx-auto mb-4">
+          <h2 class="text-xl font-bold">Charmeleon</h2>
+          <p>#005</p>
+          <div class="flex gap-2 mt-2">
+            <span class="bg-red-600 rounded-full px-2 py-1 text-xs">Fire</span>
+          </div>
+        </div>
+        <div class="bg-red-400 rounded-lg p-4 text-white">
+          <img src="https://placehold.co/100x100" alt="Charizard" class="mx-auto mb-4">
+          <h2 class="text-xl font-bold">Charizard</h2>
+          <p>#006</p>
+          <div class="flex gap-2 mt-2">
+            <span class="bg-red-600 rounded-full px-2 py-1 text-xs">Fire</span>
+            <span class="bg-blue-600 rounded-full px-2 py-1 text-xs">Flying</span>
+          </div>
+        </div>
+        <div class="bg-blue-500 rounded-lg p-4 text-white">
+          <img src="https://placehold.co/100x100" alt="Squirtle" class="mx-auto mb-4">
+          <h2 class="text-xl font-bold">Squirtle</h2>
+          <p>#007</p>
+          <div class="flex gap-2 mt-2">
+            <span class="bg-blue-700 rounded-full px-2 py-1 text-xs">Water</span>
+          </div>
+        </div>
+        <div class="bg-blue-500 rounded-lg p-4 text-white">
+          <img src="https://placehold.co/100x100" alt="Wartortle" class="mx-auto mb-4">
+          <h2 class="text-xl font-bold">Wartortle</h2>
+          <p>#008</p>
+          <div class="flex gap-2 mt-2">
+            <span class="bg-blue-700 rounded-full px-2 py-1 text-xs">Water</span>
+          </div>
+        </div>
+        <div class="bg-blue-500 rounded-lg p-4 text-white">
+          <img src="https://placehold.co/100x100" alt="Blastoise" class="mx-auto mb-4">
+          <h2 class="text-xl font-bold">Blastoise</h2>
+          <p>#009</p>
+          <div class="flex gap-2 mt-2">
+            <span class="bg-blue-700 rounded-full px-2 py-1 text-xs">Water</span>
+          </div>
+        </div>
+        <div class="bg-green-500 rounded-lg p-4 text-white">
+          <img src="https://placehold.co/100x100" alt="Caterpie" class="mx-auto mb-4">
+          <h2 class="text-xl font-bold">Caterpie</h2>
+          <p>#010</p>
+          <div class="flex gap-2 mt-2">
+            <span class="bg-green-700 rounded-full px-2 py-1 text-xs">Bug</span>
+          </div>
+        </div>
+        <div class="bg-green-500 rounded-lg p-4 text-white">
+          <img src="https://placehold.co/100x100" alt="Metapod" class="mx-auto mb-4">
+          <h2 class="text-xl font-bold">Metapod</h2>
+          <p>#011</p>
+          <div class="flex gap-2 mt-2">
+            <span class="bg-green-700 rounded-full px-2 py-1 text-xs">Bug</span>
+          </div>
+        </div>
+        <div class="bg-green-500 rounded-lg p-4 text-white">
+          <img src="https://placehold.co/100x100" alt="Butterfree" class="mx-auto mb-4">
+          <h2 class="text-xl font-bold">Butterfree</h2>
+          <p>#012</p>
+          <div class="flex gap-2 mt-2">
+            <span class="bg-green-700 rounded-full px-2 py-1 text-xs">Bug</span>
+            <span class="bg-blue-600 rounded-full px-2 py-1 text-xs">Flying</span>
+          </div>
+        </div>
+        <div class="bg-green-500 rounded-lg p-4 text-white">
+          <img src="https://placehold.co/100x100" alt="Weedle" class="mx-auto mb-4">
+          <h2 class="text-xl font-bold">Weedle</h2>
+          <p>#013</p>
+          <div class="flex gap-2 mt-2">
+            <span class="bg-green-700 rounded-full px-2 py-1 text-xs">Bug</span>
+            <span class="bg-purple-600 rounded-full px-2 py-1 text-xs">Poison</span>
+          </div>
+        </div>
+        <div class="bg-green-500 rounded-lg p-4 text-white">
+          <img src="https://placehold.co/100x100" alt="Kakuna" class="mx-auto mb-4">
+          <h2 class="text-xl font-bold">Kakuna</h2>
+          <p>#014</p>
+          <div class="flex gap-2 mt-2">
+            <span class="bg-green-700 rounded-full px-2 py-1 text-xs">Bug</span>
+            <span class="bg-purple-600 rounded-full px-2 py-1 text-xs">Poison</span>
+          </div>
+        </div>
+        <div class="bg-green-500 rounded-lg p-4 text-white">
+          <img src="https://placehold.co/100x100" alt="Beedrill" class="mx-auto mb-4">
+          <h2 class="text-xl font-bold">Beedrill</h2>
+          <p>#015</p>
+          <div class="flex gap-2 mt-2">
+            <span class="bg-green-700 rounded-full px-2 py-1 text-xs">Bug</span>
+            <span class="bg-purple-600 rounded-full px-2 py-1 text-xs">Poison</span>
+          </div>
+        </div>
+        <div class="bg-gray-400 rounded-lg p-4 text-white">
+          <img src="https://placehold.co/100x100" alt="Pidgey" class="mx-auto mb-4">
+          <h2 class="text-xl font-bold">Pidgey</h2>
+          <p>#016</p>
+          <div class="flex gap-2 mt-2">
+            <span class="bg-gray-600 rounded-full px-2 py-1 text-xs">Normal</span>
+            <span class="bg-blue-600 rounded-full px-2 py-1 text-xs">Flying</span>
+          </div>
+        </div>
+      </div>
     </div>
   </body>
 </html>

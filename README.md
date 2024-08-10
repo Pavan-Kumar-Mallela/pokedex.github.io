@@ -29,3 +29,7 @@ This project involves creating an engaging **Pokedex** application, where users 
 - Add a dropdown for sorting by number and alphabetically, in both ascending and descending order.
 - Introduce a multi-checkbox filter for Pokémon types, height, and weight within a drawer. Implement list updates and display active filter counts as well as allow to clearing of the filters.
 - Create a detailed view for each Pokémon, accessible by clicking a card. This should include tabs for 'About', 'Base stats', and 'Evolution' (the latter requiring an additional API call). Incorporate loading indicators and error handling, and display background color, number, image, name, type, and other details as per the design. Include a back button to return to the list.
+
+####note####:
+All resources are obtained from web dev
+
